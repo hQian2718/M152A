@@ -50,6 +50,18 @@ module vga_sync
 	wire [1:0] pixel_next;
 	wire pixel_tick;
 	
+	wire [3:0] pixelR;
+	wire [3:0] pixelG;
+	wire [3:0] pixelB;
+	
+	pixel_color color_getter(
+	    .h_count(h_count_reg),
+        .v_count(v_count_reg),
+        .r(pixelR),
+        .g(pixelG),
+        .b(pixelB)
+	);
+	
 	always @(posedge clk, posedge reset)
 		if(reset)
 		  pixel_reg <= 0;
@@ -122,7 +134,7 @@ module vga_sync
 				// now display different colors every 80 pixels
 				// while we're within the active horizontal range
 				// -----------------
-				if (h_count_reg >= SNAKE_LEFT && h_count_reg < SNAKE_RIGHT) begin
+				/*if (h_count_reg >= SNAKE_LEFT && h_count_reg < SNAKE_RIGHT) begin
 				    if((h_count_reg - APPLE_X)* (h_count_reg - APPLE_X) + (v_count_reg - APPLE_Y) * (v_count_reg - APPLE_Y) <= BLOCK_L * BLOCK_L / 4)
 				    begin 
 				        vgaRed = 4'b1110;
@@ -134,6 +146,12 @@ module vga_sync
 				    vgaGreen = 4'b1100;
 				    vgaBlue = 4'b1100;
 				    end
+				end*/
+				
+				if (h_count_reg >= SNAKE_LEFT && h_count_reg < SNAKE_RIGHT) begin
+				    vgaRed = pixelR;
+				    vgaGreen = pixelG;
+				    vgaBlue = pixelB;
 				end
 				// we're outside active horizontal range so display black
 				else
@@ -158,63 +176,4 @@ module vga_sync
         assign y      = v_count_reg;
         assign p_tick = pixel_tick;
         
-        
 endmodule
-
-
-/* display white bar
-				if (h_count_reg >= 0 && h_count_reg < (0+80))
-				begin
-					vgaRed = 4'b1111;
-					vgaGreen = 4'b1111;
-					vgaBlue = 4'b1111;
-				end
-				// display yellow bar
-				else if (h_count_reg >= (0+80) && h_count_reg < (0+160))
-				begin
-					vgaRed = 4'b1111;
-					vgaGreen = 4'b1111;
-					vgaBlue = 4'b0000;
-				end
-				// display cyan bar
-				else if (h_count_reg >= (0+160) && h_count_reg < (0+240))
-				begin
-					vgaRed = 4'b0000;
-					vgaGreen = 4'b1111;
-					vgaBlue = 4'b1111;
-				end
-				// display green bar
-				else if (h_count_reg >= (0+240) && h_count_reg < (0+320))
-				begin
-					vgaRed = 4'b0000;
-					vgaGreen = 4'b1111;
-					vgaBlue = 4'b0000;
-				end
-				// display magenta bar
-				else if (h_count_reg >= (0+320) && h_count_reg < (0+400))
-				begin
-					vgaRed = 4'b1111;
-					vgaGreen = 4'b00000;
-					vgaBlue = 4'b1111;
-				end
-				// display red bar
-				else if (h_count_reg >= (0+400) && h_count_reg < (0+480))
-				begin
-					vgaRed = 4'b1111;
-					vgaGreen = 4'b0000;
-					vgaBlue = 4'b0000;
-				end
-				// display blue bar
-				else if (h_count_reg >= (0+480) && h_count_reg < (0+560))
-				begin
-					vgaRed = 4'b1001;
-					vgaGreen = 4'b0000;
-					vgaBlue = 4'b1001;
-				end
-				// display black bar
-				else if (h_count_reg >= (0+560) && h_count_reg < (0+640))
-				begin
-					vgaRed = 4'b0000;
-					vgaGreen = 4'b0000;
-					vgaBlue = 4'b0000;
-				end*/

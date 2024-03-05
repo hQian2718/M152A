@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,7 +32,10 @@ set_property ip_repo_paths {
 } [current_project]
 set_property ip_output_repo c:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v
+read_verilog -library xil_defaultlib {
+  C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v
+  C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v
+}
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
