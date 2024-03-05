@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../hr-lab-2.srcs/sources_1/new/exp_sig.v" \
+"../../../../hr-lab-2.srcs/sources_1/new/sign_mag.v" \
+"../../../../hr-lab-2.srcs/sources_1/new/fp_converter.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

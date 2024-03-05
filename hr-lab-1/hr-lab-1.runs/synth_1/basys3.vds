@@ -1,0 +1,639 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Jan 16 13:25:45 2024
+# Process ID: 12028
+# Current directory: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.runs/synth_1
+# Command line: vivado.exe -log basys3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
+# Log file: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.runs/synth_1/basys3.vds
+# Journal file: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source basys3.tcl -notrace
+Command: synth_design -top basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11172 
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:1]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:2]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:3]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:4]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:5]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:7]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:8]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:9]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:10]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:12]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:13]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:14]
+WARNING: [Synth 8-2644] root scope declaration is not allowed in verilog 95/2K mode [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_definitions.v:15]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 447.094 ; gain = 106.941
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'basys3' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/basys3.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'seq' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'seq_rf' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_rf.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'seq_rf' (1#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_rf.v:1]
+INFO: [Synth 8-6157] synthesizing module 'seq_alu' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_alu.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'seq_add' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_add.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'seq_add' (2#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_add.v:1]
+INFO: [Synth 8-6157] synthesizing module 'seq_mult' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_mult.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'seq_mult' (3#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_mult.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'seq_alu' (4#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq_alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'seq' (5#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/seq.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_top' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_top.v:1]
+	Parameter seq_in_width bound to: 8 - type: integer 
+	Parameter seq_op_width bound to: 2 - type: integer 
+	Parameter seq_rn_width bound to: 2 - type: integer 
+	Parameter seq_num_regs bound to: 4 - type: integer 
+	Parameter seq_im_width bound to: 4 - type: integer 
+	Parameter seq_op_push bound to: 2'b00 
+	Parameter seq_op_add bound to: 2'b01 
+	Parameter seq_op_mult bound to: 2'b10 
+	Parameter seq_op_send bound to: 2'b11 
+	Parameter seq_dp_width bound to: 16 - type: integer 
+	Parameter seq_rf_width bound to: 16 - type: integer 
+	Parameter alu_width bound to: 16 - type: integer 
+	Parameter uart_num_nib bound to: 4 - type: integer 
+	Parameter stIdle bound to: 0 - type: integer 
+	Parameter stNib1 bound to: 1 - type: integer 
+	Parameter stNL bound to: 5 - type: integer 
+	Parameter stCR bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'uart_fifo' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_fifo.v:1]
+	Parameter size bound to: 1024 - type: integer 
+	Parameter sizew bound to: 10 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_fifo.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_fifo.v:52]
+INFO: [Synth 8-6155] done synthesizing module 'uart_fifo' (6#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_fifo.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart.v:24]
+	Parameter CLOCK_DIVIDE bound to: 25 - type: integer 
+	Parameter RX_IDLE bound to: 0 - type: integer 
+	Parameter RX_CHECK_START bound to: 1 - type: integer 
+	Parameter RX_READ_BITS bound to: 2 - type: integer 
+	Parameter RX_CHECK_STOP bound to: 3 - type: integer 
+	Parameter RX_DELAY_RESTART bound to: 4 - type: integer 
+	Parameter RX_ERROR bound to: 5 - type: integer 
+	Parameter RX_RECEIVED bound to: 6 - type: integer 
+	Parameter TX_IDLE bound to: 0 - type: integer 
+	Parameter TX_SENDING bound to: 1 - type: integer 
+	Parameter TX_DELAY_RESTART bound to: 2 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart.v:173]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (7#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'uart_top' (8#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_top.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'basys3' (9#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/basys3.v:1]
+WARNING: [Synth 8-3331] design seq_mult has unconnected port clk
+WARNING: [Synth 8-3331] design seq_mult has unconnected port rst
+WARNING: [Synth 8-3331] design seq_add has unconnected port clk
+WARNING: [Synth 8-3331] design seq_add has unconnected port rst
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 482.039 ; gain = 141.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 482.039 ; gain = 141.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 482.039 ; gain = 141.887
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/constrs_1/imports/Src_lab1/Basys-3_lab1.xdc]
+Finished Parsing XDC File [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/constrs_1/imports/Src_lab1/Basys-3_lab1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/constrs_1/imports/Src_lab1/Basys-3_lab1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 825.320 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.320 ; gain = 485.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.320 ; gain = 485.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 825.320 ; gain = 485.168
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "rf_reg[0]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rf_reg[1]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rf_reg[2]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rf_reg[3]" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart_fifo.v:52]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:12 . Memory (MB): peak = 825.320 ; gain = 485.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 5     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 5     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 7     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 3     
+	   3 Input     16 Bit        Muxes := 1     
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   8 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	  18 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 5     
+	   8 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module basys3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     18 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module seq_rf 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+Module seq_add 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+Module seq_alu 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module seq 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+Module uart_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 4     
++---Registers : 
+	               10 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---RAMs : 
+	               8K Bit         RAMs := 1     
++---Muxes : 
+	   3 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 3     
+Module uart 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     11 Bit        Muxes := 1     
+	   2 Input     11 Bit        Muxes := 4     
+	   8 Input     11 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 5     
+	   4 Input      6 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 2     
+Module uart_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     16 Bit        Muxes := 1     
+	  18 Input      7 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element uart_top_/uart_/rx_data_reg was removed.  [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.srcs/sources_1/imports/rtl/uart.v:74]
+DSP Report: Generating DSP seq_/alu_/mult_/o_data, operation Mode is: A*B.
+DSP Report: operator seq_/alu_/mult_/o_data is absorbed into DSP seq_/alu_/mult_/o_data.
+INFO: [Synth 8-5784] Optimized 1 bits of RAM "uart_top_/tfifo_/mem_reg" due to constant propagation. Old ram width 8 bits, new ram width 7 bits.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[10]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[9]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[8]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[7]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[6]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[5]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[4]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[3]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[2]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[1]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_clk_divider_reg[0]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_countdown_reg[5]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_countdown_reg[4]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_countdown_reg[3]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_countdown_reg[2]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_countdown_reg[1]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_countdown_reg[0]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_bits_remaining_reg[3]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_bits_remaining_reg[2]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_bits_remaining_reg[1]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/rx_bits_remaining_reg[0]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/recv_state_reg[2]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/recv_state_reg[1]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (uart_top_/uart_/recv_state_reg[0]) is unused and will be removed from module basys3.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 825.320 ; gain = 485.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|uart_fifo:  | mem_reg    | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The tale above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|seq_mult    | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance i_0/uart_top_/tfifo_/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:25 . Memory (MB): peak = 859.672 ; gain = 519.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 885.766 ; gain = 545.613
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|uart_fifo:  | mem_reg    | 1 K x 8(READ_FIRST)    | W |   | 1 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 1      | 0      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[9]' (FDR) to 'uart_top_/tfifo_/rp_reg[9]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[8]' (FDR) to 'uart_top_/tfifo_/rp_reg[8]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[7]' (FDR) to 'uart_top_/tfifo_/rp_reg[7]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[6]' (FDR) to 'uart_top_/tfifo_/rp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[5]' (FDR) to 'uart_top_/tfifo_/rp_reg[5]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[4]' (FDR) to 'uart_top_/tfifo_/rp_reg[4]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[3]' (FDR) to 'uart_top_/tfifo_/rp_reg[3]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[2]' (FDR) to 'uart_top_/tfifo_/rp_reg[2]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[1]' (FDR) to 'uart_top_/tfifo_/rp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'uart_top_/tfifo_/rp_reg_rep[0]' (FDR) to 'uart_top_/tfifo_/rp_reg[0]'
+INFO: [Synth 8-4480] The timing for the instance uart_top_/tfifo_/mem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     1|
+|2     |CARRY4   |    12|
+|3     |DSP48E1  |     1|
+|4     |LUT1     |     4|
+|5     |LUT2     |    31|
+|6     |LUT3     |    17|
+|7     |LUT4     |    25|
+|8     |LUT5     |    38|
+|9     |LUT6     |   117|
+|10    |RAMB18E1 |     1|
+|11    |FDPE     |     2|
+|12    |FDRE     |   186|
+|13    |FDSE     |     1|
+|14    |IBUF     |    11|
+|15    |OBUF     |     9|
++------+---------+------+
+
+Report Instance Areas: 
++------+------------+----------+------+
+|      |Instance    |Module    |Cells |
++------+------------+----------+------+
+|1     |top         |          |   456|
+|2     |  seq_      |seq       |   154|
+|3     |    alu_    |seq_alu   |     5|
+|4     |      add_  |seq_add   |     4|
+|5     |      mult_ |seq_mult  |     1|
+|6     |    rf_     |seq_rf    |   149|
+|7     |  uart_top_ |uart_top  |   222|
+|8     |    tfifo_  |uart_fifo |    92|
+|9     |    uart_   |uart      |    93|
++------+------------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 892.480 ; gain = 209.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:27 . Memory (MB): peak = 892.480 ; gain = 552.328
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 42 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 892.480 ; gain = 565.000
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-1/hr-lab-1.runs/synth_1/basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 892.480 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 16 13:26:19 2024...

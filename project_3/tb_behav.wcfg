@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="34118661000fs"></ZoomStartTime>
+      <ZoomEndTime time="88209662855fs"></ZoomEndTime>
+      <Cursor1Time time="92190948000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="101"></NameColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/tb/clk_100M" type="logic">
+      <obj_property name="ElementShortName">clk_100M</obj_property>
+      <obj_property name="ObjectShortName">clk_100M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/segment" type="array">
+      <obj_property name="ElementShortName">segment[6:0]</obj_property>
+      <obj_property name="ObjectShortName">segment[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/an" type="array">
+      <obj_property name="ElementShortName">an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">an[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/blink_/blink_an" type="array">
+      <obj_property name="ElementShortName">blink_an[3:0]</obj_property>
+      <obj_property name="ObjectShortName">blink_an[3:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/seconds" type="array">
+      <obj_property name="ElementShortName">seconds[5:0]</obj_property>
+      <obj_property name="ObjectShortName">seconds[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/minutes" type="array">
+      <obj_property name="ElementShortName">minutes[5:0]</obj_property>
+      <obj_property name="ObjectShortName">minutes[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/dis_/current_digit" type="array">
+      <obj_property name="ElementShortName">current_digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">current_digit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/count_/clk_1hz" type="logic">
+      <obj_property name="ElementShortName">clk_1hz</obj_property>
+      <obj_property name="ObjectShortName">clk_1hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/count_/clk_1hz" type="logic">
+      <obj_property name="ElementShortName">clk_1hz</obj_property>
+      <obj_property name="ObjectShortName">clk_1hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/clk_/clk_500hz" type="logic">
+      <obj_property name="ElementShortName">clk_500hz</obj_property>
+      <obj_property name="ObjectShortName">clk_500hz</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/pause" type="logic">
+      <obj_property name="ElementShortName">pause</obj_property>
+      <obj_property name="ObjectShortName">pause</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/adj" type="logic">
+      <obj_property name="ElementShortName">adj</obj_property>
+      <obj_property name="ObjectShortName">adj</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sel" type="logic">
+      <obj_property name="ElementShortName">sel</obj_property>
+      <obj_property name="ObjectShortName">sel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut/clk_/counter" type="array">
+      <obj_property name="ElementShortName">counter[26:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[26:0]</obj_property>
+   </wvobject>
+</wave_config>

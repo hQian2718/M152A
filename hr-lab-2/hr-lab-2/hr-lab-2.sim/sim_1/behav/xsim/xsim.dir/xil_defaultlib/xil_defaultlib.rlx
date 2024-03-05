@@ -1,0 +1,10 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sim_1/new/tb.v,1707427506,verilog,,,,tb,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/exp_sig.v,1707428432,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/fp_converter.v,,EXP_SIG,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/fp_converter.v,1706651231,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/rounder.v,,FPCVT,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/rounder.v,1707427928,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/sign_mag.v,,ROUND,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sources_1/new/sign_mag.v,1706647423,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/hr-lab-2/hr-lab-2/hr-lab-2.srcs/sim_1/new/tb.v,,SIGNCVT,,,,,,,,

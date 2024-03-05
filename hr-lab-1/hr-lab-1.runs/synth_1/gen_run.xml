@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1705440343">
+  <File Type="PA-TCL" Name="basys3.tcl"/>
+  <File Type="REPORTS-TCL" Name="basys3_reports.tcl"/>
+  <File Type="RDS-RDS" Name="basys3.vds"/>
+  <File Type="RDS-UTIL" Name="basys3_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="basys3_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="basys3.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/seq_definitions.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/seq_definitions.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/seq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/seq.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/seq_add.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/seq_add.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/seq_alu.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/seq_alu.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/seq_mult.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/seq_mult.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/seq_rf.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/seq_rf.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/uart.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/uart.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/uart_fifo.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/uart_fifo.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/uart_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/uart_top.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/rtl/basys3.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/rtl/basys3.v"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="basys3"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Src_lab1/Basys-3_lab1.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../lab-1/Lab1/Src_lab1/Basys-3_lab1.xdc"/>
+        <Attr Name="ImportTime" Val="1705439154"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

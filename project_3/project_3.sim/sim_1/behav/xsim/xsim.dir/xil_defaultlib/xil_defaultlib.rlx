@@ -1,0 +1,12 @@
+0.6
+2018.2
+Jun 14 2018
+20:41:02
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sim_1/new/tb.v,1709067560,verilog,,,,tb,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/imports/Stopwatch M152A/blink.v,1709066815,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/clock.v,,blinker,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/clock.v,1709066947,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/counter.v,,clock,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/counter.v,1709068004,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/debounce.v,,counter,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/debounce.v,1709064710,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/display.v,,debouncer,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/display.v,1709068442,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/stopwatch.v,,display,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sources_1/new/stopwatch.v,1709064960,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_3/project_3.srcs/sim_1/new/tb.v,,stopwatch,,,,,,,,

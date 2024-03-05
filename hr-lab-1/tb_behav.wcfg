@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="40633295985057fs"></ZoomStartTime>
+      <ZoomEndTime time="40633429429282fs"></ZoomEndTime>
+      <Cursor1Time time="96013315000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="136"></NameColumnWidth>
+      <ValueColumnWidth column_width="148"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="17" />
+   <wvobject fp_name="/tb/sw" type="array">
+      <obj_property name="ElementShortName">sw[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sw[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/btnR" type="logic">
+      <obj_property name="ElementShortName">btnR</obj_property>
+      <obj_property name="ObjectShortName">btnR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/j" type="array">
+      <obj_property name="ElementShortName">j[31:0]</obj_property>
+      <obj_property name="ObjectShortName">j[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/instructions" type="array">
+      <obj_property name="ElementShortName">instructions[0:1023][31:0]</obj_property>
+      <obj_property name="ObjectShortName">instructions[0:1023][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RsRx" type="logic">
+      <obj_property name="ElementShortName">RsRx</obj_property>
+      <obj_property name="ObjectShortName">RsRx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/RsTx" type="logic">
+      <obj_property name="ElementShortName">RsTx</obj_property>
+      <obj_property name="ObjectShortName">RsTx</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/led" type="array">
+      <obj_property name="ElementShortName">led[7:0]</obj_property>
+      <obj_property name="ObjectShortName">led[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/clk_en" type="logic">
+      <obj_property name="ElementShortName">clk_en</obj_property>
+      <obj_property name="ObjectShortName">clk_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/btnS" type="logic">
+      <obj_property name="ElementShortName">btnS</obj_property>
+      <obj_property name="ObjectShortName">btnS</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut_/step_d" type="array">
+      <obj_property name="ElementShortName">step_d[2:0]</obj_property>
+      <obj_property name="ObjectShortName">step_d[2:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut_/inst_vld" type="logic">
+      <obj_property name="ElementShortName">inst_vld</obj_property>
+      <obj_property name="ObjectShortName">inst_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut_/clk_en" type="logic">
+      <obj_property name="ElementShortName">clk_en</obj_property>
+      <obj_property name="ObjectShortName">clk_en</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut_/clk_en_d" type="logic">
+      <obj_property name="ElementShortName">clk_en_d</obj_property>
+      <obj_property name="ObjectShortName">clk_en_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut_/clk_dv" type="array">
+      <obj_property name="ElementShortName">clk_dv[16:0]</obj_property>
+      <obj_property name="ObjectShortName">clk_dv[16:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/uut_/seq_/rf_/rf[3]" type="array">
+      <obj_property name="ElementShortName">[3][15:0]</obj_property>
+      <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+   </wvobject>
+</wave_config>
