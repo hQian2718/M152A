@@ -2,8 +2,8 @@
 # Vivado v2018.2 (64-bit)
 # SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Thu Mar  7 13:02:26 2024
-# Process ID: 15508
+# Start of session at: Thu Mar  7 13:16:26 2024
+# Process ID: 2616
 # Current directory: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.runs/synth_1
 # Command line: vivado.exe -log vga_sync.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_sync.tcl
 # Log file: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.runs/synth_1/vga_sync.vds
@@ -15,9 +15,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2052 
+INFO: Helper process launched with PID 3592 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 435.301 ; gain = 95.289
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 434.906 ; gain = 95.398
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:21]
 	Parameter H_DISPLAY bound to: 640 - type: integer 
@@ -54,7 +54,7 @@ INFO: [Synth 8-6157] synthesizing module 'pixel_color' [C:/Users/Student/Documen
 	Parameter H_DISPLAY bound to: 640 - type: integer 
 	Parameter V_DISPLAY bound to: 480 - type: integer 
 INFO: [Synth 8-6155] done synthesizing module 'pixel_color' (2#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v:23]
-WARNING: [Synth 8-350] instance 'color_getter' of module 'pixel_color' requires 10 connections, but only 7 given [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
+WARNING: [Synth 8-350] instance 'color_getter' of module 'pixel_color' requires 10 connections, but only 7 given [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:89]
 INFO: [Synth 8-6157] synthesizing module 'rand_grid' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v:23]
 	Parameter BLOCKS bound to: 30 - type: integer 
 	Parameter NPIXEL_W bound to: 16 - type: integer 
@@ -63,10 +63,30 @@ WARNING: [Synth 8-6014] Unused sequential element z1_reg was removed.  [C:/Users
 WARNING: [Synth 8-6014] Unused sequential element z2_reg was removed.  [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v:46]
 INFO: [Synth 8-6155] done synthesizing module 'rand_grid' (3#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (4#1) [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:21]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[9]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[8]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[7]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[6]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[5]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[4]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[3]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[2]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[1]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_x[0]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[9]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[8]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[7]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[6]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[5]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[4]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[3]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[2]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[1]
+WARNING: [Synth 8-3331] design pixel_color has unconnected port apple_y[0]
 WARNING: [Synth 8-3331] design pixel_color has unconnected port dir[1]
 WARNING: [Synth 8-3331] design pixel_color has unconnected port dir[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.473 ; gain = 149.461
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.703 ; gain = 150.195
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -75,34 +95,14 @@ Report Check Netlist:
 +------+------------------+-------+---------+-------+------------------+
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[9] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[8] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[7] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[6] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[5] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[4] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[3] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[2] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[1] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_x[0] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[9] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[8] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[7] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[6] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[5] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[4] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[3] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[2] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[1] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
-WARNING: [Synth 8-3295] tying undriven pin color_getter:apple_y[0] to constant 0 [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v:88]
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.473 ; gain = 149.461
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.703 ; gain = 150.195
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.473 ; gain = 149.461
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 489.703 ; gain = 150.195
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -118,28 +118,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 822.086 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 823.086 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 822.086 ; gain = 482.074
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 823.086 ; gain = 483.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 822.086 ; gain = 482.074
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 823.086 ; gain = 483.578
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 822.086 ; gain = 482.074
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 823.086 ; gain = 483.578
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-327] inferring latch for variable 'r_reg' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v:99]
 WARNING: [Synth 8-327] inferring latch for variable 'g_reg' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v:100]
 WARNING: [Synth 8-327] inferring latch for variable 'b_reg' [C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v:101]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 822.086 ; gain = 482.074
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 823.086 ; gain = 483.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -154,7 +154,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input     32 Bit       Adders := 1     
 	   2 Input     21 Bit       Adders := 2     
-	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
 	   2 Input      2 Bit       Adders := 1     
@@ -190,7 +190,7 @@ Detailed RTL Component Info :
 Module pixel_color 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     11 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 2     
 +---Registers : 
 	                4 Bit    Registers := 1     
@@ -231,31 +231,31 @@ INFO: [Synth 8-3333] propagating constant 0 across sequential element (\color_ge
 INFO: [Synth 8-3886] merging instance 'color_getter/r_reg[2]' (LD) to 'color_getter/r_reg[3]'
 INFO: [Synth 8-3333] propagating constant 1 across sequential element (\color_getter/r_reg[3] )
 WARNING: [Synth 8-3332] Sequential element (color_getter/r_reg[3]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[9]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[8]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[7]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[6]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[5]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[4]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[3]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[2]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[1]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_x_reg[0]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[9]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[8]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[7]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[6]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[5]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[4]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[3]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[2]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[1]) is unused and will be removed from module vga_sync.
-WARNING: [Synth 8-3332] Sequential element (nolabel_line98/apple_y_reg[0]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[9]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[8]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[7]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[6]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[5]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[4]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[3]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[2]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[1]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_x_reg[0]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[9]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[8]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[7]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[6]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[5]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[4]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[3]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[2]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[1]) is unused and will be removed from module vga_sync.
+WARNING: [Synth 8-3332] Sequential element (grid/apple_y_reg[0]) is unused and will be removed from module vga_sync.
 WARNING: [Synth 8-3332] Sequential element (update_clk/update_clk_reg) is unused and will be removed from module vga_sync.
 WARNING: [Synth 8-3332] Sequential element (color_getter/need_apple_reg) is unused and will be removed from module vga_sync.
 WARNING: [Synth 8-3332] Sequential element (color_getter/r_reg[0]) is unused and will be removed from module vga_sync.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 822.086 ; gain = 482.074
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 823.086 ; gain = 483.578
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -263,3 +263,152 @@ Report RTL Partitions:
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 823.086 ; gain = 483.578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     2|
+|3     |LUT2 |     7|
+|4     |LUT3 |     5|
+|5     |LUT4 |     9|
+|6     |LUT5 |    14|
+|7     |LUT6 |    14|
+|8     |FDCE |    24|
+|9     |LD   |     2|
+|10    |IBUF |     2|
+|11    |OBUF |    14|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------+------------+------+
+|      |Instance       |Module      |Cells |
++------+---------------+------------+------+
+|1     |top            |            |    94|
+|2     |  color_getter |pixel_color |    20|
++------+---------------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 27 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 835.820 ; gain = 162.930
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 835.820 ; gain = 496.312
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  LD => LDCE: 2 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 52 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:24 . Memory (MB): peak = 835.820 ; gain = 508.582
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.runs/synth_1/vga_sync.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file vga_sync_utilization_synth.rpt -pb vga_sync_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 835.820 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  7 13:16:54 2024...

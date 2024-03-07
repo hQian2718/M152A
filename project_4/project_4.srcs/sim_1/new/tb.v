@@ -50,12 +50,15 @@ module tb(
     .y(apple_y)
     );
     
+    vga_sync uut(
+       .clk(clk)
+    );
     initial begin
         #1;
         clk = 0;
         update = 0;
         
-        #200000;
+        #2000000;
         $finish;
     end
     

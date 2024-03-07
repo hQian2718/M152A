@@ -94,7 +94,7 @@ module pixel_color(
             // while we're within the active horizontal range
             // -----------------
             if (h_count >= SNAKE_LEFT && h_count < SNAKE_RIGHT) begin
-                if((h_count - apple_x) <= BLOCK_L && (v_count - apple_y) <= BLOCK_L)
+                if((h_count - APPLE_X) <= BLOCK_L && (v_count - APPLE_Y) <= BLOCK_L)
                 begin 
                     r = 4'b1110;
                     g = 4'b0011;

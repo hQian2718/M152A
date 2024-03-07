@@ -49,11 +49,7 @@ module vga_sync
 	reg [1:0] pixel_reg;
 	wire [1:0] pixel_next;
 	wire pixel_tick;
-	
-	wire [3:0] pixelR;
-	wire [3:0] pixelG;
-	wire [3:0] pixelB;
-	
+
 	wire update_ticks;
 	
 	clk_divider update_clk(
@@ -85,6 +81,11 @@ module vga_sync
     wire [9:0] apple_x;
     wire [9:0] apple_y;
     
+    	
+    wire [3:0] pixelR;
+    wire [3:0] pixelG;
+    wire [3:0] pixelB;
+    
     pixel_color color_getter(
         .h_count(h_count_reg),
         .v_count(v_count_reg),
@@ -95,7 +96,7 @@ module vga_sync
         .new_apple(need_apple)
     );
     
-    rand_grid(
+    rand_grid grid(
         .x(apple_x),
         .y(apple_y),
         .update(need_apple),

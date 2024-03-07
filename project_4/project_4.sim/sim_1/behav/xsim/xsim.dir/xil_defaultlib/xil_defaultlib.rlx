@@ -3,6 +3,8 @@
 Jun 14 2018
 20:41:02
 C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.sim/sim_1/behav/xsim/glbl.v,1529022455,verilog,,,,glbl,,,,,,,,
-C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sim_1/new/tb.v,1709845015,verilog,,,,tb,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sim_1/new/tb.v,1709845950,verilog,,,,tb,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v,1709845918,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sim_1/new/tb.v,,vga_sync,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/clk_divider.v,1709675724,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v,,clk_divider,,,,,,,,
 C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v,1709845278,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v,,pixel_color,,,,,,,,
-C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v,1709844088,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sim_1/new/tb.v,,rand_grid,,,,,,,,
+C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v,1709844088,verilog,,C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/imports/Documents/vga640x480.v,,rand_grid,,,,,,,,
