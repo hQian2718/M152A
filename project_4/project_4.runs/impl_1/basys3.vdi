@@ -1,13 +1,14 @@
-
-*** Running vivado
-    with args -log basys3.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source basys3.tcl -notrace
-
-
-****** Vivado v2018.2 (64-bit)
-  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
-  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
-
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar  7 12:18:42 2024
+# Process ID: 25460
+# Current directory: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.runs/impl_1
+# Command line: vivado.exe -log basys3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source basys3.tcl -notrace
+# Log file: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.runs/impl_1/basys3.vdi
+# Journal file: C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
 source basys3.tcl -notrace
 Command: link_design -top basys3 -part xc7a35tcpg236-1
 Design is defaulting to srcset: sources_1
@@ -145,6 +146,3 @@ opt_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 
 INFO: [Timing 38-480] Writing timing data to binary archive.
 Writing placer database...
 Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1205.984 ; gain = 0.000

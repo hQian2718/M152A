@@ -30,4 +30,20 @@ module basys3(
     input vgaGreen,
     input vgaBlue
     );
+    
+    wire update_ticks;
+    
+    vga_sync display
+        (
+            .clk(clk), .reset(reset),
+            .Hsync(Hsync), .Vsync(Vsync),
+            .vgaRed(vgaRed),
+            .vgaGreen(vgaGreen),
+            .vgaBlue(vgaBlue)
+        );
+        
+    clk_divider update_clk(
+        .clk(clk),
+        .update_clk(update_ticks)
+    );
 endmodule

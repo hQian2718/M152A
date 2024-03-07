@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log vga_sync.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source vga_sync.tcl
+EAStep vivado -log basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
