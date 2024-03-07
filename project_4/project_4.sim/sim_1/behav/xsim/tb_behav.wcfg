@@ -11,25 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="15264108908284fs"></ZoomStartTime>
-      <ZoomEndTime time="15365508908285fs"></ZoomEndTime>
-      <Cursor1Time time="15297600000000fs"></Cursor1Time>
+      <ZoomStartTime time="3527316666666fs"></ZoomStartTime>
+      <ZoomEndTime time="3537616666667fs"></ZoomEndTime>
+      <Cursor1Time time="3535900000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="126"></NameColumnWidth>
-      <ValueColumnWidth column_width="104"></ValueColumnWidth>
+      <ValueColumnWidth column_width="96"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="14" />
-   <wvobject fp_name="/tb/apple_x" type="array">
-      <obj_property name="ElementShortName">apple_x[9:0]</obj_property>
-      <obj_property name="ObjectShortName">apple_x[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/apple_y" type="array">
-      <obj_property name="ElementShortName">apple_y[9:0]</obj_property>
-      <obj_property name="ObjectShortName">apple_y[9:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
+   <WVObjectSize size="20" />
    <wvobject fp_name="/tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -37,20 +27,6 @@
    <wvobject fp_name="/tb/update" type="logic">
       <obj_property name="ElementShortName">update</obj_property>
       <obj_property name="ObjectShortName">update</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/rng/count" type="array">
-      <obj_property name="ElementShortName">count[31:0]</obj_property>
-      <obj_property name="ObjectShortName">count[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/rng/z1" type="array">
-      <obj_property name="ElementShortName">z1[20:0]</obj_property>
-      <obj_property name="ObjectShortName">z1[20:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject fp_name="/tb/rng/z2" type="array">
-      <obj_property name="ElementShortName">z2[20:0]</obj_property>
-      <obj_property name="ObjectShortName">z2[20:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb/color/apple_x" type="array">
       <obj_property name="ElementShortName">apple_x[9:0]</obj_property>
@@ -72,16 +48,60 @@
       <obj_property name="ObjectShortName">v_count[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/color/r" type="array">
+   <wvobject fp_name="/tb/Hsync" type="logic">
+      <obj_property name="ElementShortName">Hsync</obj_property>
+      <obj_property name="ObjectShortName">Hsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/Vsync" type="logic">
+      <obj_property name="ElementShortName">Vsync</obj_property>
+      <obj_property name="ObjectShortName">Vsync</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/pixel_tick" type="logic">
+      <obj_property name="ElementShortName">pixel_tick</obj_property>
+      <obj_property name="ObjectShortName">pixel_tick</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/pixel_reg" type="array">
+      <obj_property name="ElementShortName">pixel_reg[1:0]</obj_property>
+      <obj_property name="ObjectShortName">pixel_reg[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/r" type="array">
       <obj_property name="ElementShortName">r[3:0]</obj_property>
       <obj_property name="ObjectShortName">r[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/color/g" type="array">
+   <wvobject fp_name="/tb/g" type="array">
       <obj_property name="ElementShortName">g[3:0]</obj_property>
       <obj_property name="ObjectShortName">g[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb/color/b" type="array">
+   <wvobject fp_name="/tb/b" type="array">
       <obj_property name="ElementShortName">b[3:0]</obj_property>
       <obj_property name="ObjectShortName">b[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/color_getter/h_count" type="array">
+      <obj_property name="ElementShortName">h_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">h_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/color_getter/v_count" type="array">
+      <obj_property name="ElementShortName">v_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">v_count[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/color_getter/apple_x" type="array">
+      <obj_property name="ElementShortName">apple_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apple_x[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/color_getter/apple_y" type="array">
+      <obj_property name="ElementShortName">apple_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apple_y[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/color_getter/dir" type="array">
+      <obj_property name="ElementShortName">dir[1:0]</obj_property>
+      <obj_property name="ObjectShortName">dir[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/color_getter/update_clk" type="logic">
+      <obj_property name="ElementShortName">update_clk</obj_property>
+      <obj_property name="ObjectShortName">update_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/sync/grid/y" type="array">
+      <obj_property name="ElementShortName">y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">y[9:0]</obj_property>
    </wvobject>
 </wave_config>

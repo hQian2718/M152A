@@ -46,7 +46,7 @@ module vga_sync
 	localparam END_V_RETRACE   = V_DISPLAY + V_B_BORDER + V_RETRACE - 1;
 	
 	// mod-4 counter to generate 25 MHz pixel tick
-	reg [1:0] pixel_reg;
+	reg [1:0] pixel_reg = 0;
 	wire [1:0] pixel_next;
 	wire pixel_tick;
 
@@ -56,31 +56,29 @@ module vga_sync
         .clk(clk),
         .update_clk(update_ticks)
     );
-    
 
-	
 	always @(posedge clk, posedge reset)
 		if(reset)
 		  pixel_reg <= 0;
-		else
+		else begin
 		  pixel_reg <= pixel_next;
-	
+	    end
+	    
 	assign pixel_next = pixel_reg + 1; // increment pixel_reg 
 	
 	assign pixel_tick = (pixel_reg == 0); // assert tick 1/4 of the time
 	
 	// registers to keep track of current pixel location
-	reg [9:0] h_count_reg, h_count_next, v_count_reg, v_count_next;
+	reg [9:0] h_count_reg = 0, h_count_next = 0, v_count_reg = 0, v_count_next = 0;
 	
 	// register to keep track of vsync and hsync signal states
-	reg vsync_reg, hsync_reg;
+	reg vsync_reg = 0, hsync_reg = 0;
 	wire vsync_next, hsync_next;
     
     //game lofic
     wire need_apple;
     wire [9:0] apple_x;
     wire [9:0] apple_y;
-    
     	
     wire [3:0] pixelR;
     wire [3:0] pixelG;
@@ -156,6 +154,7 @@ module vga_sync
 			if (v_count_reg >= 0 && v_count_reg < V_DISPLAY)
 			begin				
 				if (h_count_reg >= SNAKE_LEFT && h_count_reg < SNAKE_RIGHT) begin
+				    $display("vga is displaying apple");
 				    vgaRed = pixelR;
 				    vgaGreen = pixelG;
 				    vgaBlue = pixelB;

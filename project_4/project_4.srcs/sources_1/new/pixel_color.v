@@ -28,6 +28,7 @@ module pixel_color(
     
     input [1:0] dir,
     input update_clk,
+    input clk,
     
     output reg [3:0] r,
     output reg [3:0] g,
@@ -55,6 +56,8 @@ module pixel_color(
     reg [9:0] head_x;
     reg [9:0] head_y;
     
+    reg game_over = 0;
+    
     initial begin
         head_x <= 10 * BLOCK_L;
         head_y <= 10 * BLOCK_L;
@@ -77,18 +80,33 @@ module pixel_color(
         detect apple collision
         
     */
+    
+        
+    //testing setting aples
+    reg [3:0] acc = 0;
+    reg need_apple = 0;
+    always @(posedge update_clk) begin
+        acc = acc + 1;
+        if(acc[3] == 1) begin
+            need_apple <= 1;
+            acc = 0;
+        end else
+            need_apple <= 0;
+    end
+    
     // logic moving snake
+    integer i;
     always @(posedge update_clk) 
     begin
         // Step 1: Check for Game Over due to going out of horizontal or vertical bounds or hitting the snake's body
         if (head_x < SNAKE_LEFT || head_x >= SNAKE_RIGHT || head_y < 0 || head_y >= V_DISPLAY) begin
             $display("Game over! Out of Bounds!");
+            game_over = 1;
         end else begin
-            integer i;
             for (i = 0; i < snake_length; i = i + 1) begin
                 if (head_x == snake_x[i] && head_y == snake_y[i]) begin
                     $display("Game Over! You hit your body!");
-                    break; // Exit the loop early on collision
+                    game_over = 1;
                 end
             end
         end
@@ -117,35 +135,18 @@ module pixel_color(
             if (snake_length < 128) begin
                 snake_length = snake_length + 1;
                 // Trigger new apple position generation
-                apple_update_trigger <= !apple_update_trigger; // Toggle to ensure new position is generated
+                need_apple <= !need_apple; // Toggle to ensure new position is generated
             end
 
             // Check for Game Won condition when snake reaches its maximum length
             if (snake_length >= 128) begin
                 $display("Game Won");
+                game_over = 1;
             end
         end
+    end
 
-        // Update apple position on trigger
-        if (apple_update_trigger) begin
-            apple_x <= new_apple_x;
-            apple_y <= new_apple_y;
-        end
-    end
-    //testing setting aples
-    reg [3:0] acc = 0;
-    reg need_apple = 0;
-    always @(posedge update_clk) begin
-        acc = acc + 1;
-        if(acc[3] == 1) begin
-            need_apple <= 1;
-            acc = 0;
-        end else
-            need_apple <= 0;
-    end
-    
     assign new_apple = need_apple;
-    
     
     //displaying
     always @(*)
@@ -157,8 +158,9 @@ module pixel_color(
             // while we're within the active horizontal range
             // -----------------
             if (h_count >= SNAKE_LEFT && h_count < SNAKE_RIGHT) begin
-                if((h_count - APPLE_X) <= BLOCK_L && (v_count - APPLE_Y) <= BLOCK_L)
+                if((h_count - apple_x) <= BLOCK_L && (v_count - apple_x) <= BLOCK_L)
                 begin 
+                    $display("showing apple %d %d", h_count, v_count);
                     r = 4'b1110;
                     g = 4'b0011;
                     b = 4'b0000;

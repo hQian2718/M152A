@@ -28,7 +28,7 @@ module clk_divider(
     reg [24:0] acc = 0;
     
     always @ (posedge clk) begin 
-        if(acc[24]) begin
+        if(acc[6]) begin        //24
             update_clk <= 1;
             acc <= 0;
         end else begin 

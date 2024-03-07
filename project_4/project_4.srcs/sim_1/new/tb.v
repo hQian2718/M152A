@@ -33,6 +33,12 @@ module tb(
     reg [9:0] test_x;
     reg [9:0] test_y;
     
+    wire Hsync;
+    wire Vsync;
+    
+    wire [3:0] r;
+    wire [3:0] g;
+    wire [3:0] b;
     
     pixel_color color(
         .h_count(test_x),
@@ -49,10 +55,16 @@ module tb(
     .x(apple_x),
     .y(apple_y)
     );
-    
-    vga_sync uut(
-       .clk(clk)
+
+    vga_sync sync(
+        .Hsync(Hsync),
+        .Vsync(Vsync),
+        .clk(clk),
+        .vgaRed(r),
+        .vgaGreen(g),
+        .vgaBlue(b)
     );
+    
     initial begin
         #1;
         clk = 0;
