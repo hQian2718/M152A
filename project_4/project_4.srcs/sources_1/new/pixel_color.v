@@ -69,6 +69,69 @@ module pixel_color(
         detect apple collision
         
     */
+    
+    /*
+        the game is over if head_x or head_y out of bounds
+        write a switch statement to move snake head
+        update each body block in snake_x and snake_y
+        detect apple collision
+        
+    */
+    // logic moving snake
+    always @(posedge update_clk) 
+    begin
+        // Step 1: Check for Game Over due to going out of horizontal or vertical bounds or hitting the snake's body
+        if (head_x < SNAKE_LEFT || head_x >= SNAKE_RIGHT || head_y < 0 || head_y >= V_DISPLAY) begin
+            $display("Game over! Out of Bounds!");
+        end else begin
+            integer i;
+            for (i = 0; i < snake_length; i = i + 1) begin
+                if (head_x == snake_x[i] && head_y == snake_y[i]) begin
+                    $display("Game Over! You hit your body!");
+                    break; // Exit the loop early on collision
+                end
+            end
+        end
+
+        // Update the position of the snake's body segments
+        for (i = snake_length - 1; i > 0; i = i - 1) begin
+            snake_x[i] = snake_x[i-1];
+            snake_y[i] = snake_y[i-1];
+        end
+        // handle first segment 
+        if(snake_length > 1) begin
+            snake_x[0] = head_x;
+            snake_y[0] = head_y;
+        end
+
+        // Step 2: Handle the snake movement based on input direction
+        case (dir)
+            UP: head_y = head_y - BLOCK_L;
+            DOWN: head_y = head_y + BLOCK_L;
+            LEFT: head_x = head_x - BLOCK_L;
+            RIGHT: head_x = head_x + BLOCK_L;
+        endcase
+
+        // Check if the snake eats the apple
+        if (head_x == apple_x && head_y == apple_y) begin
+            if (snake_length < 128) begin
+                snake_length = snake_length + 1;
+                // Trigger new apple position generation
+                apple_update_trigger <= !apple_update_trigger; // Toggle to ensure new position is generated
+            end
+
+            // Check for Game Won condition when snake reaches its maximum length
+            if (snake_length >= 128) begin
+                $display("Game Won");
+            end
+        end
+
+        // Update apple position on trigger
+        if (apple_update_trigger) begin
+            apple_x <= new_apple_x;
+            apple_y <= new_apple_y;
+        end
+    end
     //testing setting aples
     reg [3:0] acc = 0;
     reg need_apple = 0;
