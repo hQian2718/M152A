@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="207703215783000fs"></ZoomStartTime>
-      <ZoomEndTime time="207762124009359fs"></ZoomEndTime>
-      <Cursor1Time time="207722709051000fs"></Cursor1Time>
+      <ZoomStartTime time="135555586487fs"></ZoomStartTime>
+      <ZoomEndTime time="205770842077fs"></ZoomEndTime>
+      <Cursor1Time time="164730514000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="75"></NameColumnWidth>
-      <ValueColumnWidth column_width="112"></ValueColumnWidth>
+      <NameColumnWidth column_width="126"></NameColumnWidth>
+      <ValueColumnWidth column_width="108"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="9" />
    <wvobject fp_name="/tb/apple_x" type="array">
       <obj_property name="ElementShortName">apple_x[9:0]</obj_property>
       <obj_property name="ObjectShortName">apple_x[9:0]</obj_property>
@@ -50,6 +50,16 @@
    <wvobject fp_name="/tb/rng/z2" type="array">
       <obj_property name="ElementShortName">z2[20:0]</obj_property>
       <obj_property name="ObjectShortName">z2[20:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/color/apple_x" type="array">
+      <obj_property name="ElementShortName">apple_x[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apple_x[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb/color/apple_y" type="array">
+      <obj_property name="ElementShortName">apple_y[9:0]</obj_property>
+      <obj_property name="ObjectShortName">apple_y[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

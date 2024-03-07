@@ -42,11 +42,11 @@ module rand_grid(
         if(count[31]==1) count = 0;
     end
     always @ (posedge update) begin
-        //z1 = count % 530209;
-        //z2 = count % 979189;
+        z1 = count % 530209;
+        z2 = count % 979189;
         
-        z1 = count % 17;
-        z2 = count % 31;
+        //z1 = count % 17;
+        //z2 = count % 31;
         
         apple_x = (z2 % (z1+1)) % NPIXEL_W * BLOCKS + BLOCKS / 2;
         apple_y = (z1 % (z2+1)) % NPIXEL_H * BLOCKS + BLOCKS / 2;

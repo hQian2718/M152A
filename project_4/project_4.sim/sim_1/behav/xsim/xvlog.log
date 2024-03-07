@@ -1,3 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/pixel_color.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pixel_color
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sources_1/new/rand_grid.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module rand_grid
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Student/Documents/2024-winter-lab-5/harry-ryan/project_4/project_4.srcs/sim_1/new/tb.v" into library xil_defaultlib

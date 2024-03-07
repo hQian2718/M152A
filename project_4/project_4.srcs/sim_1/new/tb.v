@@ -28,10 +28,24 @@ module tb(
     
     reg clk;
     reg update;
+    wire apple_gen;
+    
+    reg [9:0] test_x;
+    reg [9:0] test_y;
+    
+    
+    pixel_color color(
+        .h_count(test_x),
+        .v_count(test_y),
+        .update_clk(update),
+        .new_apple(apple_gen),
+        .apple_x(apple_x),
+        .apple_y(apple_y)
+    );
     
     rand_grid rng(
     .clk(clk),
-    .update(update),
+    .update(apple_gen),
     .x(apple_x),
     .y(apple_y)
     );
@@ -53,6 +67,14 @@ module tb(
     always begin
         #5010;
         update = ~update;
+    end
+    
+    always begin
+        for(test_x = 160; test_x < 640; test_x = test_x + 1) begin
+            for(test_y = 160; test_y < 640; test_y = test_y + 1) begin
+                #10;
+            end
+        end
     end
     
     

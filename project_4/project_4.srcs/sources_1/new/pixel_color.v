@@ -69,11 +69,19 @@ module pixel_color(
         detect apple collision
         
     */
+    //testing setting aples
+    reg [3:0] acc = 0;
+    reg need_apple = 0;
     always @(posedge update_clk) begin
-        
-    
+        acc = acc + 1;
+        if(acc[3] == 1) begin
+            need_apple <= 1;
+            acc = 0;
+        end else
+            need_apple <= 0;
     end
     
+    assign new_apple = need_apple;
     
     
     //displaying
@@ -86,7 +94,7 @@ module pixel_color(
             // while we're within the active horizontal range
             // -----------------
             if (h_count >= SNAKE_LEFT && h_count < SNAKE_RIGHT) begin
-                if((h_count - APPLE_X)* (h_count - APPLE_X) + (v_count - APPLE_Y) * (v_count - APPLE_Y) <= BLOCK_L * BLOCK_L / 4)
+                if((h_count - apple_x) <= BLOCK_L && (v_count - apple_y) <= BLOCK_L)
                 begin 
                     r = 4'b1110;
                     g = 4'b0011;

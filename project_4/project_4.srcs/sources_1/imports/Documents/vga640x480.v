@@ -54,13 +54,14 @@ module vga_sync
 	wire [3:0] pixelG;
 	wire [3:0] pixelB;
 	
-	pixel_color color_getter(
-	    .h_count(h_count_reg),
-        .v_count(v_count_reg),
-        .r(pixelR),
-        .g(pixelG),
-        .b(pixelB)
-	);
+	wire update_ticks;
+	
+	clk_divider update_clk(
+        .clk(clk),
+        .update_clk(update_ticks)
+    );
+    
+
 	
 	always @(posedge clk, posedge reset)
 		if(reset)
@@ -78,7 +79,29 @@ module vga_sync
 	// register to keep track of vsync and hsync signal states
 	reg vsync_reg, hsync_reg;
 	wire vsync_next, hsync_next;
- 
+    
+    //game lofic
+    wire need_apple;
+    wire [9:0] apple_x;
+    wire [9:0] apple_y;
+    
+    pixel_color color_getter(
+        .h_count(h_count_reg),
+        .v_count(v_count_reg),
+        .r(pixelR),
+        .g(pixelG),
+        .b(pixelB),
+        .update_clk(update_ticks),
+        .new_apple(need_apple)
+    );
+    
+    rand_grid(
+        .x(apple_x),
+        .y(apple_y),
+        .update(need_apple),
+        .clk(clk)
+    );
+    
 	// infer registers
 	always @(posedge clk, posedge reset)
 		if(reset)
@@ -130,24 +153,7 @@ module vga_sync
 		begin
 			// first check if we're within vertical active video range
 			if (v_count_reg >= 0 && v_count_reg < V_DISPLAY)
-			begin
-				// now display different colors every 80 pixels
-				// while we're within the active horizontal range
-				// -----------------
-				/*if (h_count_reg >= SNAKE_LEFT && h_count_reg < SNAKE_RIGHT) begin
-				    if((h_count_reg - APPLE_X)* (h_count_reg - APPLE_X) + (v_count_reg - APPLE_Y) * (v_count_reg - APPLE_Y) <= BLOCK_L * BLOCK_L / 4)
-				    begin 
-				        vgaRed = 4'b1110;
-				        vgaGreen = 4'b0011;
-				        vgaBlue = 4'b0000;
-				    end
-				    else begin
-				    vgaRed = 4'b1100;
-				    vgaGreen = 4'b1100;
-				    vgaBlue = 4'b1100;
-				    end
-				end*/
-				
+			begin				
 				if (h_count_reg >= SNAKE_LEFT && h_count_reg < SNAKE_RIGHT) begin
 				    vgaRed = pixelR;
 				    vgaGreen = pixelG;
@@ -172,8 +178,5 @@ module vga_sync
         // output signals
         assign Hsync  = hsync_reg;
         assign Vsync  = vsync_reg;
-        assign x      = h_count_reg;
-        assign y      = v_count_reg;
-        assign p_tick = pixel_tick;
         
 endmodule
